@@ -41,7 +41,7 @@ public class Characteristic : NSObject {
     var readPromises = [Promise<Void>]()
     var writePromises = [Promise<Void>]()
 
-    weak var cbCharacteristic: CBCharacteristicInjectable?
+    public weak var cbCharacteristic: CBCharacteristicInjectable?
 
     var centralQueue: Queue {
         return service!.centralQueue
